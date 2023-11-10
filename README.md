@@ -1,12 +1,13 @@
 <h1 align="center">kudos-gpt</h1>
 
 <h4 align="center">
-  <a href="https://www.notion.so/kudos-gpt-PreRelease-66dda64ba79341d2a459a4412fdcbc2c?pvs=4#f66bd815b06847d6ac6b04c3e2a592d4">Settings</a>
+  <a href="https://github.com/akudo7/kudos-gpt/blob/main/README.md">Settings</a>
   ·
-  <a href="https://www.notion.so/kudos-gpt-PreRelease-66dda64ba79341d2a459a4412fdcbc2c?pvs=4#f66bd815b06847d6ac6b04c3e2a592d4">Features</a>
+  <a href="https://github.com/akudo7/kudos-gpt/blob/main/README.md">Features</a>
   ·
-  <a href="https://www.notion.so/kudos-gpt-support-6f6859c38a1447448e181971700bf6d1">Support</a>
+  <a href="https://github.com/akudo7/kudos-gpt/issues">Support</a>
 </h4>
+
 
 <p align="left">
 The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI chatbot like the ChatGPT right in the VSCode. Use it as your AI programming assistant which you can talk with to understand complex code, modify and improve your code, or generate comments for your code. The possibilities are endless until the maxTokens actually. To start, turn on it from the command menu, highlight a piece of code, click on the plus icon on the left to open a chat, and start talking with it just like in the ChatGPT. All your conversations are saved and exported in your workspace so you can look back on them automatically when you open files.
