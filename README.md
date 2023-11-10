@@ -261,7 +261,7 @@ To ignore a message in a discussion, the `Note` command from the `More actionsâ€
 <details>
 <summary>0A. Notion export</summary>
 
-To export a discussion to the Notion, a Notion Integration Token have to be entered beforehand. And then you can click the notion icon `Notion export` and enter a pageId in the dialog. It will be add as a database in the Notion page.
+To export a discussion to the Notion, a Notion Integration Token have to be entered beforehand. And then the notion icon `Notion export` will be available and will be able to enter a pageId in the dialog. It will be add as a database in the Notion page.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_1.png" />
 </p>
