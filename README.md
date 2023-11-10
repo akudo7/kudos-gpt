@@ -8,7 +8,7 @@
   <a href="https://www.notion.so/kudos-gpt-support-6f6859c38a1447448e181971700bf6d1">Support</a>
 </h4>
 
-<p align="center">
+<p align="left">
 The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI chatbot like the ChatGPT right in the VSCode. Use it as your AI programming assistant which you can talk with to understand complex code, modify and improve your code, or generate comments for your code. The possibilities are endless until the maxTokens actually. To start, turn on it from the command menu, highlight a piece of code, click on the plus icon on the left to open a chat, and start talking with it just like in the ChatGPT. All your conversations are saved and exported in your workspace so you can look back on them automatically when you open files.
 </p>
 
@@ -31,7 +31,7 @@ To enable the kudos-gpt, you need to set the token to the Setting / kudos-gpt / 
 <font color="red">kudo-gpt token for pre-release, it will be working until 2024-03-31.</font>
     
 ```text
-    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjEuMC4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6ImM0ZTgyNjBlMjQ3M2I1YTc1MTBkZTk3ZTcxNGViODliMWMwNzBlOWJlNzczNzZmMTcyM2IxN2QyMGMwNGZjYjIiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI2Mjk5YWE0Mi01MzQ2LTQ1NTgtODEwMS00ZWY0NzNhZTg2MzQiLCJpYXQiOjE2OTg4MTQwNjcsImV4cCI6MTcxMTkyOTYwMH0.GNQ_wsidhwZU15QuraTVU5TPHZU6nL9n5OVvgV7frA7X-DkEWP-1Yk1b5yDSXVGEXP4sfsf-b7j5zuR21W5YTc1UNVytu8LyoV1VV8qZGLvCCmLs5PtZpqcBncXOw2IA2NXP-RkzAr-9E3q_3bo1S4Tbdr6mVcIPGmCeGLTLQJKaVkVbNb0iRmoK0RsH5B09gptE8PoIG0jag9k5stuYNkh8ouGr1nah7hDznIdaN_SDEBS2dOGbK1m3ibqSLUMeI16gNKvf7ytVbsTjmZ-XBC6KjSkTzGCnsPLKlC5vJfuBGKxr8gFtDZJuDdHLFU-75mghIFiyEwCzT0E2SQIeyg
+    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjEuMC4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6IjdlZTlkNjZiZGMxYzlmNzQ3NWZjZmRmMWFjZTQ5OTE0ZDNmYzA3MWY1OTFlMmEzZGNkM2U5YmQzMWY4ZmEwMmMiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI5ZmE3MzVlYS02YTFlLTRmMDgtODcwNy0xZGFjYzkyYjViZDIiLCJpYXQiOjE2OTk2MjAyODYsImV4cCI6MTcxMTkyOTYwMH0.Z5Gg1ACzNYAp0dABrfnF0UXFl0f7uissKljImL6O-4R-8wvvaDLpVL8n8TnzYEkgUtIhLu_wfwFW61_LJ3OVzI30NW0q47mSjijRiANp4yLMnqLE8N2bhnuWALpFqswT5QN1k6PQBWDbWJQhkODh0KQYYcbthoaFG5HBKUkLbd8wVBj-MYv45f-BJm5bO49YhqXPoO8u76iQJu5oJovc81Q7wTBWg3WG9z7TDSViZ7egl1f9iAvYa05PZEfRtzcR7wOK-5POUUfATwB5mO1lVCV1KGJthfL2xy0sf-JiXM6DX9xsRTHvo68A_YECBw8fWwiuiNUUkggTF7m3vv8XQA
 ```
 
 <p align="center">
