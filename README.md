@@ -1,12 +1,13 @@
 <h1 align="center">kudos-gpt</h1>
 
 <h4 align="center">
-  <a href="https://github.com/akudo7/kudos-gpt/blob/main/README.md">Settings</a>
+  <a href="https://github.com/akudo7/kudos-gpt/blob/main/README.md#settings">Settings</a>
   ·
-  <a href="https://github.com/akudo7/kudos-gpt/blob/main/README.md">Features</a>
+  <a href="https://github.com/akudo7/kudos-gpt/blob/main/README.md#features">Features</a>
   ·
   <a href="https://github.com/akudo7/kudos-gpt/issues">Support</a>
 </h4>
+
 
 
 <p align="left">
