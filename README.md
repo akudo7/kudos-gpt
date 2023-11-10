@@ -28,7 +28,7 @@ The kudo-gpt supports many features to ask your requests to AIs with a simple an
 <details>
 <summary>01. Set the token:</summary>
 
-To enable the kudos-gpt, you need to set the token to the Setting / kudos-gpt / 08 Kudos GPT Toen. You can use the token below because of pre-releasing. To enable setting this value, you have to restart the VSCode again. 
+To enable the kudos-gpt, the token below need to be set to the Setting / kudos-gpt / 08 Kudos GPT Toen. To enable setting this value, the VSCode have to be restarted.
 
 <font color="red">kudo-gpt token for pre-release, it will be working until 2024-03-31.</font>
     
@@ -42,12 +42,12 @@ To enable the kudos-gpt, you need to set the token to the Setting / kudos-gpt / 
 </details>
 &nbsp;
 <details>
-<summary>02. Chose to use the OpenAI or Azure OpenAI:</summary>
+<summary>02. Choose the OpenAI or Azure OpenAI:</summary>
 &nbsp;
 <details>
 <summary>OpenAI</summary>
 
-To select the OpenAI, you need to set some values below.
+To use the OpenAI, some values below have to be set.
 - Setting / kudos-gpt / 01 Service
     - OpenAI
 - Setting / kudos-gpt / 02 OpenAI APIKey
@@ -58,7 +58,7 @@ To select the OpenAI, you need to set some values below.
     - gpt-4
     - gpt-4-32k
 
-To enable setting these values, you have to restart the VSCode again.
+To enable these values, the VSCode have to be restarted.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_01_1.png" />
 </p>
@@ -67,7 +67,7 @@ To enable setting these values, you have to restart the VSCode again.
 <details>
 <summary>Azure OpenAI</summary>
 
-To select the Azure OpenAI, you need to set some values below.
+To use the Azure OpenAI, some values below have to be set.
 - Setting / kudos-gpt / 01 Services
     - Azure OpenAI
 - Setting / kudos-gpt / 04 Azure URL
@@ -80,7 +80,7 @@ To select the Azure OpenAI, you need to set some values below.
     - Your Azure Deployment ID
     - example: `kudo-35-16k`
 
-To enable setting these values, you have to restart the VSCode again.
+To enable these values, the VSCode have to be restarted.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_01_2.png" />
 </p>
@@ -90,7 +90,7 @@ To enable setting these values, you have to restart the VSCode again.
 <details>
 <summary>03. Adjustment of the AI parameters:</summary>
     
-To change the parameters of the OpenAI or Azure OpenAI, you need to edit some values below in settings.json.
+To change the parameters of the OpenAI and Azure OpenAI, some values below have to be edited in settings.json.
 - Setting / kudos-gpt / Chat Options
     
 ```json
@@ -112,7 +112,7 @@ To change the parameters of the OpenAI or Azure OpenAI, you need to edit some va
 <details>
 <summary>04. Adjustment of the messages of the buttons:</summary>
     
-To change the messages of the buttons, you need to edit some values below in settings.json.
+To change the messages of the buttons, some values below have to be edited in settings.json.
 
 - Setting / kudos-gpt / Messages
 ```json
@@ -138,11 +138,11 @@ The kudo-gpt supports many features to ask your requests to AIs with a simple an
 <details>
 <summary>01. Turn On/Off:</summary>
 
-After loading the kudos-gpt successfully, you have to turn it on yourself with the `kudos-gpt: On/Off`.
+After loading the kudos-gpt successfully, the `kudos-gpt: On/Off` have to be executed yourself for turnning it on.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_1.png" />
 </p>
-So you can click on the plus icon on the left to create a new chat and also click a note to open a chat.
+So the plus icon on the left will be available for creating/opening a chat.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_2.png" />
 </p>
@@ -150,7 +150,7 @@ So you can click on the plus icon on the left to create a new chat and also clic
 &nbsp;
 <details>
 <summary>02. Have a discussion by asking directly:</summary>
-To ask your question in a discussion, you can use the `Direct asking` button.
+To ask your question in a discussion, the `Direct asking` button is available.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_1.png" />
 </p>
@@ -163,7 +163,7 @@ Your question will be answered from the assistant.
 <details>
 <summary>03. Have a discussion with templates:</summary>
 
-To start a discussion with the template, you can use strings in the clipboard for the `Clipboard` button.
+To start a discussion with the template, strings in the clipboard are available with the `Clipboard` button.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_1.png" />
 </p>
@@ -175,7 +175,7 @@ To use the buttons, the message will be added as the user.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_3.png" />
 </p>
-After pushing the “Find bugs” for example, a message from the AIs will be from the assistant.
+After pushing the “Find bugs” for example, a message from the AIs will be added as the assistant.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_4.png" />
 </p>
@@ -193,7 +193,7 @@ Save discussions are available with the pencil icon `JSON Export`. It will be cr
 <details>
 <summary>05. Delete a discussion</summary>
 
-To delete a discussion, you can click the cross icon `del thread`. 
+To delete a discussion, the cross icon `del thread` is available. 
 <font color="red">NOTE: It is not removed from a JSON file.</font>
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_07_1.png" />
@@ -203,7 +203,7 @@ To delete a discussion, you can click the cross icon `del thread`.
 <details>
 <summary>06. Delete a message</summary>
 
-To delete a message in a discussion, you can use the `Delete` command from the `More actions…`. 
+To delete a message in a discussion, the `Delete` command from the `More actions…` is available.
 <font color="red">NOTE: It is not removed from a JSON file.</font>
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_08_1.png" />
@@ -219,7 +219,7 @@ To delete a message in a discussion, you can use the `Delete` command from the `
 <details>
 <summary>07. Edit a message</summary>
 
-To edit a message in a discussion, you can use the `Edit` command from the `More actions…`. To enable the editing, you can use the `save` button. 
+To edit a message in a discussion, the `Edit` command from the `More actions…` is available. And the `save` button is available for enabling the editing.
 <font color="red">NOTE: It is not removed from a JSON file.</font>
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_09_1.png" />
@@ -235,7 +235,7 @@ To edit a message in a discussion, you can use the `Edit` command from the `More
 <details>
 <summary>08. Ignore a message in a discussion</summary>
 
-To ignore a message in a discussion, you can use the `Note` command from the `More actions…`.
+To ignore a message in a discussion, the `Note` command from the `More actions…` is available.
 <font color="red">NOTE: It is not removed from a JSON file.</font>
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_10_1.png" />
@@ -261,7 +261,7 @@ To ignore a message in a discussion, you can use the `Note` command from the `Mo
 <details>
 <summary>0A. Notion export</summary>
 
-To export a discussion to the Notion, you have to enter a Notion Integration Token beforehand. And then you can click the notion icon `Notion export` and enter a pageId in the dialog. It will be add as a database in the Notion page.
+To export a discussion to the Notion, a Notion Integration Token have to be entered beforehand. And then you can click the notion icon `Notion export` and enter a pageId in the dialog. It will be add as a database in the Notion page.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_1.png" />
 </p>
