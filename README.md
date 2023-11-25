@@ -16,7 +16,7 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 
 # Usage image
 <p align="center">
-    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_preview.png" />
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v1.1.0.gif" />
     <font color="red">NOTE: It is confirmed to work on the macOS, Sonoma 14.0 only.</font>
 </p>
 
@@ -26,14 +26,14 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
 <details>
-<summary>01. Set the token:</summary>
+<summary>01. Set the token:<font color="red"> New token for v1.1.0 is available.</font></summary>
 
 To enable the kudos-gpt, the token below need to be set to the Setting / kudos-gpt / 08 Kudos GPT Toen. To enable setting this value, the VSCode have to be restarted.
 
 <font color="red">kudo-gpt token for pre-release, it will be working until 2024-03-31.</font>
     
 ```text
-    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjEuMC4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6IjdlZTlkNjZiZGMxYzlmNzQ3NWZjZmRmMWFjZTQ5OTE0ZDNmYzA3MWY1OTFlMmEzZGNkM2U5YmQzMWY4ZmEwMmMiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI5ZmE3MzVlYS02YTFlLTRmMDgtODcwNy0xZGFjYzkyYjViZDIiLCJpYXQiOjE2OTk2MjAyODYsImV4cCI6MTcxMTkyOTYwMH0.Z5Gg1ACzNYAp0dABrfnF0UXFl0f7uissKljImL6O-4R-8wvvaDLpVL8n8TnzYEkgUtIhLu_wfwFW61_LJ3OVzI30NW0q47mSjijRiANp4yLMnqLE8N2bhnuWALpFqswT5QN1k6PQBWDbWJQhkODh0KQYYcbthoaFG5HBKUkLbd8wVBj-MYv45f-BJm5bO49YhqXPoO8u76iQJu5oJovc81Q7wTBWg3WG9z7TDSViZ7egl1f9iAvYa05PZEfRtzcR7wOK-5POUUfATwB5mO1lVCV1KGJthfL2xy0sf-JiXM6DX9xsRTHvo68A_YECBw8fWwiuiNUUkggTF7m3vv8XQA
+    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjEuMS4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6Ijg1NDBmYjQ5NGZhNDMyOGYxZGU4YzdkY2Q5Mzk2ZjY1NDZiYTdkMjg0ZGVlNWM1MWI0ZGI1YjA0YjhmMWE1YTkiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI1ODU0NTI2YS0xYWM0LTRhYTItODA3OC1jNjcyOTJkN2U3MmQiLCJpYXQiOjE3MDA5MTcyMjgsImV4cCI6MTcxMTkyOTYwMH0.eAO3lD1U01aiv6Nc-PbeKSz0qMP8mnbHgSHRYLiuyLmnfOg_LIZW0OQJyz-SsMITPzDyDJRkxp3C0drJBXOTny4OGwjKTN2dJauz4F4x9B03_29JOATPnToVK2t6_LpiOiuMcAGIvMqQrTRya8Kzh1hHe36gA4yV8biG5XxhNwwBmReGSk74cTPY-jXDEK0kEH7XZbe-iQyactQu9j-PuNvrrmEMSEFUyZO9EPzW_i5JbPkt3hQ8tQkiaNQVj3HthjqZ1ACxrU1WDzMIrwXisWm4MShGK1xCvTaAC4PE2mKXCXOeEUDTaJ464cbVixRM_BsthP6zL3qLper2PULWEQ
 ```
 
 <p align="center">
@@ -96,10 +96,10 @@ To change the parameters of the OpenAI and Azure OpenAI, some values below have 
 ```json
 "kudos-gpt.chatOptions": {
     "maxTokens": 4000,
-    "temperature": 0.7,
+    "temperature": 0.3,
     "frequencyPenalty": 0,
     "presencePenalty": 0,
-    "topP": 1
+    "topP": 0.2
 },
 ```
 
@@ -110,7 +110,7 @@ To change the parameters of the OpenAI and Azure OpenAI, some values below have 
 &nbsp;&nbsp;
 
 <details>
-<summary>04. Adjustment of the messages of the buttons:</summary>
+<summary>04. Adjustment of the messages of the buttons: <font color="red"> New feature is available.</font></summary>
     
 To change the messages of the buttons, some values below have to be edited in settings.json.
 
@@ -123,11 +123,27 @@ To change the messages of the buttons, some values below have to be edited in se
     "vulnerabilityAssessment": "Find and address vulnerabilities in the code, anshow the improvements as the improved code.",
     "speedEnhancement": "Diagnose if code speed improvement is possible, and shothe improvements as the improved code.",
     "etcEnhancement": "Diagnose if any other improvements are possible, and show thimprovements as the improved code.",
-    "makeComment": "Add comments for code review to the class, methods, and allines of code as the improved code."
+    "makeComment": "Add comments for code review to the class, methods, and allines of code as the improved code.",
+    "terminal": "Here are the results. Let me know if any corrections are needed and provide suggestions for improvement."
 },
 ```
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_03_1.png" />
+</p>
+</details>
+&nbsp;
+
+<details>
+<summary>05. Adjustment of the temporary folder: <font color="red"> New feature is available.</font></summary>
+    
+To change the temporary folder, a value below have to be edited in settings.json.
+
+- Setting / kudos-gpt / Temp Folder
+```json
+/var/tmp
+```
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_30_0.png" />
 </p>
 </details>
 &nbsp;
@@ -142,14 +158,27 @@ After loading the kudos-gpt successfully, the `kudos-gpt: On/Off` have to be exe
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_1.png" />
 </p>
-So the plus icon on the left will be available for creating/opening a chat.
+So the plus icon on the left will be available for creating/opening a discussion.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_2.png" />
 </p>
 </details>
 &nbsp;
 <details>
-<summary>02. Have a discussion by asking directly:</summary>
+<summary>02. Start a discussion with the system: <font color="red"> New feature is available.</font></summary>
+
+The button "System" is available to create a discussion from the system. 
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_20_0.png" />
+</p>
+No longer need to put any strings to the clipboard before pushing the button. All strings from an active text editor will be added to a message with a "kudos-gpt.messages.makeHeader" prompt in the settings.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_20_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>03. Have a discussion by asking directly:</summary>
 To ask your question in a discussion, the `Direct asking` button is available.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_1.png" />
@@ -161,7 +190,7 @@ Your question will be answered from the assistant.
 </details>
 &nbsp;
 <details>
-<summary>03. Have a discussion with templates:</summary>
+<summary>04. Have a discussion with templates:</summary>
 
 To start a discussion with the template, strings in the clipboard are available with the `Clipboard` button.
 <p align="center">
@@ -182,7 +211,19 @@ After pushing the “Find bugs” for example, a message from the AIs will be ad
 </details>
 &nbsp;
 <details>
-<summary>04. Save a discussion</summary>
+<summary>05. Create a message from a terminal:<font color="red"> New feature is available.</font></summary>
+
+To create a message with the output from a terminal is available with the `Terminal` button. All strings from a terminal will be added to a message with a "kudos-gpt.messages.terminal" prompt in the settings.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>06. Save a discussion</summary>
 
 Save discussions are available with the pencil icon `JSON Export`. It will be created a new JSON file as an `opening file + .json`, and also they will be imported automatically when an original file is opened.
 <p align="center">
@@ -191,7 +232,7 @@ Save discussions are available with the pencil icon `JSON Export`. It will be cr
 </details>
 &nbsp;
 <details>
-<summary>05. Delete a discussion</summary>
+<summary>07. Delete a discussion</summary>
 
 To delete a discussion, the cross icon `del thread` is available. 
 <font color="red">NOTE: It is not removed from a JSON file.</font>
@@ -201,7 +242,7 @@ To delete a discussion, the cross icon `del thread` is available.
 </details>
 &nbsp;
 <details>
-<summary>06. Delete a message</summary>
+<summary>08. Delete a message</summary>
 
 To delete a message in a discussion, the `Delete` command from the `More actions…` is available.
 <font color="red">NOTE: It is not removed from a JSON file.</font>
@@ -217,7 +258,7 @@ To delete a message in a discussion, the `Delete` command from the `More actions
 </details>
 &nbsp;
 <details>
-<summary>07. Edit a message</summary>
+<summary>09. Edit a message</summary>
 
 To edit a message in a discussion, the `Edit` command from the `More actions…` is available. And the `save` button is available for enabling the editing.
 <font color="red">NOTE: It is not removed from a JSON file.</font>
@@ -233,7 +274,7 @@ To edit a message in a discussion, the `Edit` command from the `More actions…`
 </details>
 &nbsp;
 <details>
-<summary>08. Ignore a message in a discussion</summary>
+<summary>10. Ignore a message in a discussion</summary>
 
 To ignore a message in a discussion, the `Note` command from the `More actions…` is available.
 <font color="red">NOTE: It is not removed from a JSON file.</font>
@@ -249,7 +290,20 @@ To ignore a message in a discussion, the `Note` command from the `More actions�
 </details>
 &nbsp;
 <details>
-<summary>09. l10n supporting</summary>
+<summary>11. Compare/update an active text editor with a message<font color="red"> New feature is available.</font></summary>
+
+To compare/update an active text editor with a message in a discussion, the `Compare` command from the `More actions…` is available.
+<font color="red">NOTE: A temporary file will be created in a folder `Setting / kudos-gpt / Temp Folder`.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>12. l10n supporting</summary>
 
 - English
 - Japanese
@@ -260,7 +314,6 @@ To ignore a message in a discussion, the `Note` command from the `More actions�
 # Bonus features(not stable yet)
 <details>
 <summary>0A. Notion export</summary>
-
 To export a discussion to the Notion, a Notion Integration Token have to be entered beforehand. And then the notion icon `Notion export` will be available and will be able to enter a pageId in the dialog. It will be add as a database in the Notion page.
 <p align="center">
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_1.png" />
@@ -276,7 +329,11 @@ To export a discussion to the Notion, a Notion Integration Token have to be ente
 </p>
 </details>
 
-## Enjoy coding, and have fun!
+&nbsp;
+# Comming features soon(I hope...)
+- RAG
+- Replace the Assistants API as new one
+- Local LLMs
 
 ## **Hand-crafted by [Akira Kudo](https://www.linkedin.com/in/akira-kudo-4b04163/) in Tokyo, Japan**
 
