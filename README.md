@@ -26,14 +26,14 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
 <details>
-<summary>01. Set the token:<font color="red"> New token for v1.1.0 is available.</font></summary>
+<summary>01. Set the token:<font color="red"> New token for v1.1.1 is available.</font></summary>
 
 To enable the kudos-gpt, the token below need to be set to the Setting / kudos-gpt / 08 Kudos GPT Toen. To enable setting this value, the VSCode have to be restarted.
 
 <font color="red">kudo-gpt token for pre-release, it will be working until 2024-03-31.</font>
     
 ```text
-    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjEuMS4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6Ijg1NDBmYjQ5NGZhNDMyOGYxZGU4YzdkY2Q5Mzk2ZjY1NDZiYTdkMjg0ZGVlNWM1MWI0ZGI1YjA0YjhmMWE1YTkiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI1ODU0NTI2YS0xYWM0LTRhYTItODA3OC1jNjcyOTJkN2U3MmQiLCJpYXQiOjE3MDA5MTcyMjgsImV4cCI6MTcxMTkyOTYwMH0.eAO3lD1U01aiv6Nc-PbeKSz0qMP8mnbHgSHRYLiuyLmnfOg_LIZW0OQJyz-SsMITPzDyDJRkxp3C0drJBXOTny4OGwjKTN2dJauz4F4x9B03_29JOATPnToVK2t6_LpiOiuMcAGIvMqQrTRya8Kzh1hHe36gA4yV8biG5XxhNwwBmReGSk74cTPY-jXDEK0kEH7XZbe-iQyactQu9j-PuNvrrmEMSEFUyZO9EPzW_i5JbPkt3hQ8tQkiaNQVj3HthjqZ1ACxrU1WDzMIrwXisWm4MShGK1xCvTaAC4PE2mKXCXOeEUDTaJ464cbVixRM_BsthP6zL3qLper2PULWEQ
+    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjEuMS4xIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6ImQzOGIzY2NjMzU3OGZjYzE4ZjZiOGVmMTdmY2U1MTc0NDVmZWRjN2Q5NjQ0MjI2YzI4ZWY0MWU3MzYwM2ViZDMiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiIyMGE4MzM1Ni02M2EwLTRmMDItYThmMS1lZWZlNDU0ZTZkYzkiLCJpYXQiOjE3MDE0MjAxNTgsImV4cCI6MTcxMTkyOTYwMH0.FJaLU8IuiczWk7m7Tar4ZT-IvPsTmqNKUBINZWMedgrqgr2aLYYkSIUF7YOX2Z_6_5URQLeEPq-N8NiEFTqnhx4VQ4Pr1dnSBDZVFRQ2UF44RIUq_STCguy8kAX4x6kEK__i83ZbM_avRVvS9StkQFcoMGbS2fi1u6FbGOs_pNPWUl5c5jRe8dx0rVMTSVbbLSCkIxb-2zyRZU-LmQ3WVak5NBfCJA7WvvWpjg5k4hX1S6c6ym52n-6pyWtndMBg0b6lkEWr9mfRsX5XlQvqei3vyCrgH1Ag63mwbTqABGeYDpcfXlChShpx7vZMn96wWb-dz_bTCZA2-asBXlEdrw
 ```
 
 <p align="center">
