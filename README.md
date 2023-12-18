@@ -990,7 +990,7 @@ To export a discussion to the Notion, a Notion Integration Token have to be ente
 # Comming features soon(I hope...)
 
 - Replacing the Assistants API with the Azure OpenAI
-- Retrieval
+- Supporting the retrieval with the Azure OpenAI
 - Local LLMs
 
 ## **Hand-crafted by [Akira Kudo](https://www.linkedin.com/in/akira-kudo-4b04163/) in Tokyo, Japan**
