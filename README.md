@@ -15,7 +15,15 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 
 # New features
 
-- <font color="red" size=5>ver 2.1.0</font>
+- <font color="red" size=5>ver 2.2.0</font>
+  - Supported the GPT4ALL.
+      - <font color="red">Recommend to confirm working it with the GPT4ALL <a href="https://github.com/nomic-ai/gpt4all?tab=readme-ov-file#chat-client">Chat Client</a> beforehands.</font>.
+  - Fixed an error with deleting a thread before saving.
+        <p align="center">
+        <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v2.2.0_1.png" />
+        <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v2.2.0_2.png" />
+        </p>
+- <font size=5>ver 2.1.0</font>
   - Supported the RAG with the OpenAI.
   - Fixed not saving multiple threads.
   - Fixed making same comments when open a file before saving its json.
@@ -28,7 +36,7 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
         <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v2.0.0.gif" />
         </p>
 - <font size=5>ver 1.1.1</font>
-  - Changed the button "Clipboard" to "System", and no longer need to put any strings to the Clipboard    before pushing it.
+  - Changed the button "Clipboard" to "System", and no longer need to put any strings to the Clipboard before pushing it.
   - Added the feature "Compare" that is available to compare/edit an active text editor with a comment.
   - Added the button "Terminal" that is available to create a chat from outputs from a terminal.
   - Fixed the button "Terminal" is also pasting outputs to a terminal.
@@ -43,7 +51,190 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
 <details>
-<summary><font color="red" size=5>ver 2.1.0</font></summary>
+<summary><font color="red" size=5>ver 2.2.0</font></summary>
+<details>
+ <summary>01. Set the token: <font color="red">New feature is available.</font></summary>
+</br>
+To enable the kudos-gpt, the token below needs to be set to the Setting / kudos-gpt / 08 Kudos GPT Toen. To enable setting this value, the VSCode has to be restarted.
+</br>
+</br>
+<font color="red">kudo-gpt token for pre-release, it will be working until 2024-12-31.</font>
+
+```text
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjIuMi4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6ImVmODZkNWRiNDdhNGQ4YTVmNDM0ZDNlZDhiODJlZmYxNWEyYjg5ZjhkNjBlNzcxZGNiNzMyNTU0MzcyZTU0ZjIiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI1MWE4OGFlZi1kYTE1LTQ4ZDEtOTIwNC02NzBiNjZmZWZhYmYiLCJpYXQiOjE3MDQzMjg1ODIsImV4cCI6MTczNTYwMzIwMH0.RkFs2a1S19-KFS6p4ptuupHLQZyb9Jqg4inY7z8RLPmoiCfGQ1z4ut3qIv8b652WzN1TQFoGVxHaiQRlx1GKQvcSa0E6EwkItzVB1hnY4Jk14h6ZA5kJYgU0lXPIRlQ9meMML7PaoylykPgpPN5QhydGN1cN7MEwYx-v6RuqEAiqjyGArmihUPKcHBAS7im4GlnKeHi0IGHRVAy9IhZ9VPCXkh05Raa4d1J4cX-F-qyKLB0Kt_hBnzDKbCjggWL0pkPhSfPSrhOgC89fNLnnGKxvdQQicT6s_g8d7Hybh2XDwOqCpx3qTNsM_AaBOgcqAxG19SwenSOKJFRRFbhgfQ
+```
+
+<p align="center">
+<img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_00_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>02. Choose the OpenAI, Azure OpenAI or GPT4ALL: <font color="red">New feature is available.</font></summary>
+&nbsp;
+<details>
+<summary>OpenAI</summary>
+
+To use the OpenAI, some values below have to be set.
+
+- Setting / kudos-gpt / 01 Service
+  - OpenAI
+- Setting / kudos-gpt / 02 OpenAI APIKey
+  - Your OpenAI APIKey
+- Setting / kudos-gpt / 03 Open AI Models
+  - gpt-3.5-turbo
+  - gpt-3.5-turbo-16k
+  - gpt-4
+  - gpt-4-32k
+  - gpt-4-1106-preview
+
+To enable these values, the VSCode has to be restarted.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_01_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>Azure OpenAI</summary>
+
+To use the Azure OpenAI, some values below have to be set.
+
+- Setting / kudos-gpt / 01 Services
+  - Azure OpenAI
+- Setting / kudos-gpt / 04 Azure URL
+  - Your Azure URL
+  - example: `https://kudo-openai-1.openai.azure.com/`
+- Setting / kudos-gpt / 05 Azure APIKey
+  - Your Azure APIKey
+  - example: `12345678901234567l890abcdefghijk`
+- Setting / kudos-gpt / 06 Azure Deployment ID
+  - Your Azure Deployment ID
+  - example: `kudo-35-16k`
+
+To enable these values, the VSCode has to be restarted.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_01_2.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary><font color="red">GPT4ALL</font></summary>
+
+To use the GPT4ALL, some values below have to be set. They should be comfirmed working with the GPT4ALL <a href="https://github.com/nomic-ai/gpt4all?tab=readme-ov-file#chat-client">Chat Client</a> beforehands.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/gpt4all_device.png" />
+    </p>
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/gpt4all_env.png" />
+    </p>
+
+- Setting / kudos-gpt / 01 Services
+  - GPT4ALL
+- Setting / kudos-gpt / 10 GPT4ALL Device
+  - cpu
+  - gpt
+  - amd
+  - nvidia
+  - intel
+  - example: `cpu`
+- Setting / kudos-gpt / 11 GPT4ALL Model
+  - Your GPT4ALL Model
+  - example: `mistral-7b-openorca.Q4_0.gguf`
+- Setting / kudos-gpt / 12 GPT4ALL Model Folder
+  - Your GPT4ALL Model Folder `as full path`
+  - example: `/Users/akirakudo/Library/Application Support/nomic.ai/GPT4All`
+- Setting / kudos-gpt / 13 GPT4ALL Chat Options
+
+    ```json
+        "kudos-gpt.13gpt4allChatOptions": {
+            "tokensSize": 4000,
+            "temp": 0.7,
+            "topK": 40,
+            "topP": 0.4,
+            "repeatPenalty": 1.18,
+            "repeatLastN": 64,
+            "nBatch": 8,
+            "nPredict": 1000,
+            "systemPromptTemplate": "%1"
+        },
+    ```
+
+To enable these values, the VSCode has to be restarted.
+</details>
+
+</details>
+&nbsp;
+<details>
+<summary>03. Adjustment of the AI parameters:</summary>
+
+To change the parameters of the OpenAI and Azure OpenAI, some values below have to be edited in settings.json.
+
+- Setting / kudos-gpt / Chat Options
+
+    ```json
+    "kudos-gpt.chatOptions": {
+        "maxTokens": 4000,
+        "temperature": 0.3,
+        "frequencyPenalty": 0,
+        "presencePenalty": 0,
+        "topP": 0.2
+    },
+    ```
+
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_02_1.png" />
+    `</p>
+</details>
+&nbsp;&nbsp;
+
+<details>
+<summary>04. Adjustment of the messages of the buttons:</summary>
+
+To change the messages of the buttons, some values below have to be edited in settings.json.
+
+- Setting / kudos-gpt / Messages
+
+    ```json
+    "kudos-gpt.messages": {
+        "progress": "inquiring...",
+        "autoSystem": "The code is as follows",
+        "manualSystem": "The code is as follows",
+        "bugAssessment": "Find the bugs in the code, and show the improvements as the improved code.",
+        "vulnerabilityAssessment": "Find and address vulnerabilities in the code, and show the improvements as the improved code.",
+        "speedEnhancement": "Diagnose if code speed improvement is possible, and show the improvements as the improved code.",
+        "etcEnhancement": "Diagnose if any other improvements are possible, and show the improvements as the improved code.",
+        "makeComment": "Add comments for code review to the class, methods, and all lines of code as the improved code.",
+        "terminal": "Here are the results. Let me know if any corrections are needed and provide suggestions for improvement."
+    },
+    ```
+
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_03_1.png" />
+    </p>
+</details>
+&nbsp;
+
+<details>
+<summary>05. Adjustment of the temporary folder:</summary>
+
+To change the temporary folder, a value below have to be edited in settings.json.
+
+- Setting / kudos-gpt / Temp Folder
+
+    ```json
+    /var/tmp
+    ```
+
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_30_0.png" />
+    </p>
+</details>
+&nbsp;
+</details>
+&nbsp;
+
+<details>
+<summary><font size=5>ver 2.1.0</font></summary>
 <details>
  <summary>01. Set the token:</summary>
 </br>
@@ -461,7 +652,185 @@ To change the temporary folder, a value below have to be edited in settings.json
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
 <details>
-<summary><font color="red" size=5>ver 2.1.0</font></summary>
+<summary><font color="red" size=5>ver 2.2.0</font></summary>
+<details>
+<summary>01. Turn On/Off:</summary>
+
+After loading the kudos-gpt successfully, the `kudos-gpt: On/Off` has to be executed yourself for turnning it on.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_1.png" />
+</p>
+So the plus icon on the left will be available for creating/opening a discussion.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_2.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>02. Start a discussion with the system:</summary>
+
+The button "Auto System" and "Manual Systerm" are available to create aa system for a new discussion.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_v2_20_0.png" />
+</p>
+The button "Auto System" doesn't need to put any strings to the clipboard before pushing the button. All strings from an active text editor will be added to a message with the "kudos-gpt.messages.autoSystem" prompt in the settings.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_20_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>03. Have a discussion by asking directly:</summary>
+To ask your question in a discussion, the `Direct asking` button is available.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_1.png" />
+</p>
+Your question will be answered from the assistant.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_2.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>04. Have a discussion with templates:</summary>
+
+To start a discussion with the template, strings in the clipboard are available with the `Clipboard` button.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_1.png" />
+</p>
+To use the Clipboard button, a message will be added as the system.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_2.png" />
+</p>
+To use the buttons, a message will be added as the user.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_3.png" />
+</p>
+After pushing the “Find bugs” for example, a message from the AIs will be added as the system.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_4.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>05. Create a message from a terminal:</summary>
+
+To create a message with the output from a terminal is available with the `Terminal` button. All strings from a terminal will be added to a message with a "kudos-gpt.messages.terminal" prompt in the settings.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>06. Save a discussion: <font color="red">New feature is available.</font></summary>
+
+To Save a log in a discussion is available with the pencil icon `JSON Export`. It will be created a new JSON file as an `opening file + .json` for the Azure OpenAI, and also `opening file + .{model name}.openai.json` that has a threadId and assistantId for the OpenAI.  <font color="red">For the GPT4ALL, `opening file + .{model name}.gpt4all.json`.</font> They will be imported automatically when an original closed file is opened.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_11_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>07. Delete a discussion: </summary></summary>
+
+To delete a discussion, the cross icon `del thread` is available.
+<font color="red">NOTE: It is removed from a JSON file, and also deleting the thread, assistant and RAG files from the OpenAI.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_07_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>08. Add a file to the discussion: </summary>
+
+To add a file to a discussion for the RAG feature, the icon `Add a file to the assistant`is available. And the "RAG" exploerer will be appeared for deleting and reloading it from the discussions after that.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_50_1.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_50_2.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_50_3.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>09. Delete a message</summary>
+
+To delete a message in a discussion, the `Delete` command from the `More actions…` is available. This feature works for the Azure OpenAI.
+<font color="red">NOTE: It is not removed from a JSON file automatically.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_08_1.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_08_2.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_08_3.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>10. Edit a message</summary>
+
+To edit a message in a discussion, the `Edit` command from the `More actions…` is available. And the `save` button is available for enabling the editing. This feature works for the Azure OpenAI.
+<font color="red">NOTE: It is not removed from a JSON file automatically.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_09_1.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_09_2.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_09_3.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>11. Ignore a message in a discussion</summary>
+
+To ignore a message in a discussion, the `Note` command from the `More actions…` is available. This feature works for the Azure OpenAI.
+<font color="red">NOTE: It is not removed from a JSON file automatically.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_10_1.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_10_2.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_10_3.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>12. Compare/update an active text editor with a message</summary>
+
+To compare/update an active text editor with a message in a discussion, the `Compare` command from the `More actions…` is available.
+<font color="red">NOTE: A temporary file will be created in a folder `Setting / kudos-gpt / Temp Folder`.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>13. l10n supporting</summary>
+
+- English
+- Japanese
+
+</details>
+</details>
+&nbsp;
+
+<details>
+<summary><font size=5>ver 2.1.0</font></summary>
 <details>
 <summary>01. Turn On/Off:</summary>
 
@@ -991,7 +1360,7 @@ To export a discussion to the Notion, a Notion Integration Token have to be ente
 
 - Replacing the Assistants API with the Azure OpenAI
 - Supporting the retrieval with the Azure OpenAI
-- Local LLMs
+- Supporting LlamaIndex for Local RAG (if the LlamaIndex.TS had a way without any APIKeys)
 
 ## **Hand-crafted by [Akira Kudo](https://www.linkedin.com/in/akira-kudo-4b04163/) in Tokyo, Japan**
 
