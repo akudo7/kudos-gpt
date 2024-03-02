@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+    redis:
+        container_name: 'redisearch'
+        image: 'redislabs/redisearch:latest'
+        #environment:
+        #    REDIS_PASSWORD: "P@ssw0rd!"
+        ports:
+            - '6379:6379'
+        #command: redis-server --appendonly no --requirepass P@ssw0rd!
