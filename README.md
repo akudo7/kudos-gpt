@@ -15,7 +15,15 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 
 # New features
 
-- <font color="red" size=5>ver 3.0.0</font>
+- <font color="red" size=5>ver 4.0.0</font>
+  - Focusing the Assistant to use LLMs, RAG, Agents and etc via the [Flowise](https://github.com/FlowiseAI/Flowise?tab=readme-ov-file).
+    - <font color="red">Recommend to confirm working it beforehands</font>.
+        <p align="center">
+        <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.0.0_1.png"/>
+        <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.0.0_2.png"/>
+        <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.0.0_3.png"/>
+        </p>
+- <font size=5>ver 3.0.0</font>
   - Supported the Copilot feature like the Github Copilot.
   - Supported the Ollama to the Assistant.
     - <font color="red">Recommend to confirm working it with a UI like [ollama-webui](https://github.com/ollama-webui/ollama-webui) beforehands.</font>
@@ -60,7 +68,139 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
 <details>
-<summary><font color="red" size=5>ver 3.0.0</font></summary>
+<summary><font color="red" size=5>ver 4.0.0</font></summary>
+<details>
+<summary>00. Sample a Flowise ChatFlow and a docker-compose: <font color="red">New feature is available.</font></summary>
+The kudos-gpt expects to be used the Chat Memory on the [Flowise](https://github.com/FlowiseAI/Flowise?tab=readme-ov-file). So let me show a sample of it as files below.
+</br>
+[kudos-gpt with llama2(ollama)](https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_with_llama2(ollama)_Chatflow.json)
+[docker-compose.yml](https://github.com/akudo7/kudos-gpt/raw/HEAD/docker-compose.yml)
+</br>
+<p align="center">
+<img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.0.0_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+ <summary>01. Set the token: <font color="red">New feature is available.</font></summary>
+</br>
+To enable the kudos-gpt, the token below needs to be set to the Setting / kudos-gpt / 08 Kudos GPT Toen. To enable setting this value, the VSCode has to be restarted.
+</br>
+</br>
+<font color="red">kudo-gpt token for pre-release, it will be working until 2024-08-31.</font>
+
+```text
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjQuMC4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6ImViMmExYTc0ZDE4NTVmYWQwNDMzM2MzNzM0MDNlNTNlNmNlYzliNTFjNDEwYzBjOWU4MmViMThkYTE0MGMwMDQiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI0ODQwY2QzNy0yODE0LTRkMWItOTAwNy0xYWIzMTMyYzA3ODgiLCJpYXQiOjE3MDkzNTI4MDcsImV4cCI6MTcyNTA2MjQwMH0.CK9XbH6XIt7vwjIt4RoD0nYaKtxgatV-PvOfUIWJ3c8Ltz3MUvW12tuLrr6cbpAgKmmxVxiW5pmDJTMa4K8KUAV74rXboX5BIG76HYhbo4TzphQDFrfb4iBzfL6FnaU9W0cF0FbjJExpXhzqDDYZqyLb5tVtLypBO-GUf3ekUwBg3cnQ340IkcfnqvADMTwrh9zSga-38zYa5j_LrwiTqBatDt4L-QgkvTygPvNxLt84so0SBEYtgD0qzpYSoIRmn1_NMK_HKJqt7f6dmNWwu9TZG8R4MCA9Mu7dV7A8cI0w2wdkoZpj-EkRpr7FTGpKaCPWgBEddcvogEz4ZGIjRw
+```
+
+<p align="center">
+<img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_00_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>02. Set the Flowise URL and a ChatFlowId: <font color="red">New feature is available.</font></summary>
+&nbsp;
+
+To use the Flowise, some values below have to be set.
+
+- Setting / kudos-gpt / Flowise ChatFlow ID
+  - 00000000-0000-0000-0000-000000000000
+- Setting / kudos-gpt / Flowise URL
+  - http://localhost:3000/api/v1
+
+To enable these values, the VSCode has to be restarted.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_70_1.png" />
+</p>
+</details>
+&nbsp;
+
+
+<details>
+<summary>03. Adjustment of the messages of the buttons: <font color="red">New feature is available.</font></summary></summary>
+
+To change the messages of the buttons, some values below have to be edited in settings.json.
+
+- Setting / kudos-gpt / Messages
+
+    ```json
+    "kudos-gpt.messages": {
+        "clipboard": "The code:",
+        "progress": "inquiring...",
+        "bugAssessment": "Find the bugs in the code, and show the improvements as the improved code.",
+        "vulnerabilityAssessment": "Find and address vulnerabilities in the code, and show the improvements as the improved code.",
+        "speedEnhancement": "Diagnose if code speed improvement is possible, and show the improvements as the improved code.",
+        "etcEnhancement": "Diagnose if any other improvements are possible, and show the improvements as the improved code.",
+        "makeComment": "Add comments for code review to the class, methods, and all lines of code as the improved code.",
+        "makeTest": "Make tests for the code.",
+        "terminal": "Here are the results. Let me know if any corrections are needed and provide suggestions for improvement."
+    },
+    ```
+
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_03_1.png" />
+    </p>
+
+</details>
+&nbsp;
+
+<details>
+<summary>04. Adjustment of the temporary folder:</summary>
+
+To change the temporary folder, a value below have to be edited in settings.json.
+
+- Setting / kudos-gpt / Temp Folder
+
+    ```json
+    /var/tmp
+    ```
+
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_30_0.png" />
+    </p>
+
+</details>
+&nbsp;
+
+<details>
+<summary>05. Adjustment of the Copilot: </summary>
+
+- Setting / kudos-gpt / 16 Copilot Services
+  - Your LLM Host URL
+  - example: `Ollama`
+- Setting / kudos-gpt / 17 Copilot Host
+  - Your Ollama Host URL
+  - example: `http://127.0.0.1:11434`
+- Setting / kudos-gpt / 18 Copilot Model
+  - Your Copilot Model
+  - example: `deepseek-coder:1.3b-base-q4_1`
+- Setting / kudos-gpt / 19 Copilot FIM
+  - Your Copilot FIM
+  - example: `starcoder`
+- Setting / kudos-gpt / 20 Copilot Options
+
+    ```json
+    "kudos-gpt.20CopilotOptions": {
+        "num_predict": 10,
+        "temperature": 0.1
+    },
+    ```
+
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_60_1.png" />
+    </p>
+To enable these values, the VSCode has to be restarted.
+
+</details>
+&nbsp;
+
+</details>
+&nbsp;
+
+
+<details>
+<summary><font size=5>ver 3.0.0</font></summary>
 <details>
  <summary>01. Set the token: <font color="red">New feature is available.</font></summary>
 </br>
@@ -310,6 +450,8 @@ To enable these values, the VSCode has to be restarted.
 
 </details>
 &nbsp;
+
+
 
 <details>
 <summary><font size=5>ver 2.2.0</font></summary>
@@ -914,7 +1056,125 @@ To change the temporary folder, a value below have to be edited in settings.json
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
 <details>
-<summary><font color="red" size=5>ver 3.0.0</font></summary>
+<summary><font color="red" size=5>ver 4.0.0</font></summary>
+<details>
+<summary>01. Turn On/Off: </summary>
+
+- Assistans
+  - After loading the kudos-gpt successfully, the `kudos-gpt: Assistants On/Off` has to be executed yourself for turnning it on.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_1.png" />
+    </p>
+    So the plus icon on the left will be available for creating/opening a discussion.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_2.png" />
+    </p>
+- Copilot
+  - After loading the kudos-gpt successfully, the `kudos-gpt: Copilot On/Off` has to be executed yourself for turnning it on.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_3.png" />
+    </p>
+    So the inputing the return key on the code will be available for asking some candidate codes to a LLM.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v3.0.0_1.gif" />
+    </p>
+</details>
+&nbsp;
+<details>
+<summary>02. Have a discussion by asking directly:</summary>
+To ask your question in a discussion, the `Direct asking` button is available.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_1.png" />
+</p>
+Your question will be answered from the assistant.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_2.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>03. Have a discussion with templates:</summary>
+
+To start a discussion with the template, strings in the clipboard are available with the `Clipboard` button.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_1.png" />
+</p>
+To use the Clipboard button, a message will be added as the system.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_2.png" />
+</p>
+To use the buttons, a message will be added as the user.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_3.png" />
+</p>
+After pushing the “Find bugs” for example, a message from the AIs will be added as the system.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_4.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>04. Create a message from a terminal:</summary>
+
+To create a message with the output from a terminal is available with the `Terminal` button. All strings from a terminal will be added to a message with a "kudos-gpt.messages.terminal" prompt in the settings.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>05. Save a discussion: </summary>
+
+To Save a log in a discussion is available with the pencil icon `JSON Export`. It will be created a new JSON file as an `opening file + .{Flowise ChatFlowId}.json`. It will be imported automatically when an original closed file is opened.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_11_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>06. Delete a discussion: </summary></summary>
+
+To delete a discussion, the cross icon `del thread` is available. It will also delete a thread on the Flowise Chat Mdemory.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_07_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>07. Compare/update an active text editor with a message</summary>
+
+To compare/update an active text editor with a message in a discussion, the `Compare` command from the `More actions…` is available.
+<font color="red">NOTE: A temporary file will be created in a folder `Setting / kudos-gpt / Temp Folder`.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>08. l10n supporting</summary>
+
+- English
+- Japanese
+
+</details>
+</details>
+&nbsp;
+
+
+
+
+
+
+
+
+<details>
+<summary><font size=5>ver 3.0.0</font></summary>
 <details>
 <summary>01. Turn On/Off: <font color="red">New feature is available.</font></summary>
 
@@ -1784,7 +2044,7 @@ To compare/update an active text editor with a message in a discussion, the `Com
 
 &nbsp;
 
-# Bonus features(not stable yet)
+# Bonus features(not stable yet) <font color="red">Deprecated, use the web hook on the Flowise instead</font>
 
 <details>
 <summary>0A. Notion export</summary>
@@ -1807,9 +2067,6 @@ To export a discussion to the Notion, a Notion Integration Token have to be ente
 
 # Comming features soon(I hope...)
 
-- Replacing the Assistants API with the Azure OpenAI
-- Supporting the retrieval with the Azure OpenAI
-- Supporting LlamaIndex for Local RAG [(if the LlamaIndex.TS had a way without any APIKeys)](https://github.com/run-llama/LlamaIndexTS/issues/299)
 - Supporting to trained on permissive data with local models
 
 By the way, I have been thinking of focusing local LLMs, and deprecating the OpenAI and Azure OpenAI. Let me know what you think.
