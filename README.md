@@ -15,7 +15,16 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 
 # New features
 
-- <font color="red" size=5>ver 4.5.0</font>
+<font color="red" size=5>ver 4.6.0</font>
+- Supported the Flowise-SDK
+  - Available to receive stream responses from LLM.
+  - No longer need to set api version in the Flowise URL on the Assistant tab.
+    - it must be set as 'http://localhost:3000' from 'http://localhost:3000/apiv1'.
+  <p align="center">
+  <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.6.0.gif"/>
+  </p>
+- <font size=5>ver 4.5.0</font>
+  <details>
   - Supporting the Flowise API Key
     - Need to set a Flowise API Key on the Assistant tab.
     - Flowise API needs it from v2.0.6.
@@ -122,7 +131,93 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
-<summary><font color="red" size=5>ver 4.5.0</font></summary>
+
+<summary><font color="red" size=5>ver 4.6.0</font></summary>
+&nbsp;
+<details>
+ <summary>01. Set the token: <font color="red">New feature is available.</font></summary>
+</br>
+To enable the kudos-gpt, the token below needs to be set to the Setting / kudos-gpt / 08 Kudos GPT Toen. To enable setting this value, the VSCode has to be restarted.
+</br>
+</br>
+<font color="red">kudo-gpt token for pre-release, it will be working until 2025-03-31.</font>
+
+```text
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjQuNi4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6IjliNzQ1ODhkMzU2NWUzMDlhMmUyZjEzZjhiNGI1YzM2MmQ5NjZiMTEwNTVkNGM0MGE4N2I0OTQ4MDI4MjExNTAiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiJhZTQ0NWE5Mi0wYzNkLTQ4NTItYjQ3ZS05Mjc1NzUyN2YwMTciLCJpYXQiOjE3MjcxODc2NDMsImV4cCI6MTc0MzM3OTIwMH0.rqGjZdKIaRmay_TMOCZ24WEaqMJhePDODJEU22fM7pjFofczG8GikQje_y79SkNqKIjO91yBbFqUOORkarRqheZ6uEvcIcWNsO6e-k4KAHXvPIaQ3DkIDRBrxS3Spab1V3qMZaoDGW1ThQWPCmO_rRoh0Wi5L6yvTCmK_w2Dp36LAwJ0hME2hScnmopmW4I_TiymjjonlxsKy1czmO6AYzNAyALHkUT7A82WVst8MOgw9wnMZZUfOQrmkX18awchJh0KA4L15jkZCxA0SBRpmXxMKclP4lbViPT31gjQwxMfY8_NSPbotNPpxQydY-NrrxhHdnjJl8anfLczrEn7tg
+```
+<p align="center">
+<img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_00_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>02. Set for the Assistant: <font color="red">New feature is available.</font></summary>
+&nbsp;
+
+The command "kudos-gpt: show configuration" is available to set values below for the Assistant.
+
+- Flowise API Key
+  - example: `FK9DVbyGQYRcs9uv9RqCGVuGpxqcL+pcXj/XhA494o4=`
+- Flowise URL
+  - example: `http://localhost:3000`
+- Flowise ChatFlow ID
+  - example: `00000000-0000-0000-0000-000000000000`
+- Temp Folder
+  - example: `/var/tmp`
+- Messages
+  - clipboard
+    - example: `The code:`
+  - progress
+    - example: `inquiring...`
+  - bugAssessment
+    - example: `Find the bugs in the code, and show the improvements as the improved code.`
+  - vulnerabilityAssessment
+    - example: `Find and address vulnerabilities in the code, and show the improvements as the improved code.`
+  - speedEnhancement
+    - example: `Diagnose if code speed improvement is possible, and show the improvements as the improved code.`
+  - etcEnhancement
+    - example: `Diagnose if any other improvements are possible, and show the improvements as the improved code.`
+  - makeComment
+    - example: `Add comments for code review to the class, methods, and all lines of code as the improved code.`
+  - makeTest
+    - example: `Make tests for the code.`
+  - terminal
+    - example: `Here are the results. Let me know if any corrections are needed and provide suggestions for improvement.`
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_2.png"/>
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_3.png"/>
+</p>
+</details>
+&nbsp;
+
+<details>
+<summary>03. Set for the Copilot:</summary>
+The command "kudos-gpt: show configuration" is available to set values below for the Copilot.
+
+- Services
+  - example: `Ollama`
+- Host
+  - example: `http://127.0.0.1:11434`
+- Model
+  - example: `deepseek-coder:1.3b-base-q4_1`
+- FIM
+  - example: `starcoder`
+- num_predict
+  - example: `10`
+- temperature
+  - example: `0.1`
+
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_2.png"/>
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_4.png"/>
+</p>
+</details>
+
+
+
+
+<details>
+<summary><font size=5>ver 4.5.0</font></summary>
 &nbsp;
 <details>
  <summary>01. Set the token: <font color="red">New feature is available.</font></summary>
@@ -201,6 +296,7 @@ The command "kudos-gpt: show configuration" is available to set values below for
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_2.png"/>
     <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_4.png"/>
 </p>
+</details>
 
 </details>
 
@@ -1532,7 +1628,149 @@ To change the temporary folder, a value below have to be edited in settings.json
 
 The kudo-gpt supports many features to ask your requests to AIs with a simple and easy-to-use interface.
 
-<summary><font color="red" size=5>ver 4.5.0</font></summary>
+<summary><font color="red" size=5>ver 4.6.0</font></summary>
+<details>
+<summary>01. Configuration: </summary>
+
+- Configuration
+  - After loading the kudos-gpt successfully, the `kudos-gpt: show configuration` has to be executed yourself for turnning it on.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_2.png" />
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.5.0_2.png" />
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.1.0_4.png" />
+    </p>
+</details>
+&nbsp;
+<details>
+<summary>02. Turn On/Off: </summary>
+
+- Assistans
+  - After loading the kudos-gpt successfully, the `kudos-gpt: Assistants On/Off` has to be executed yourself for turnning it on.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_1.png" />
+    </p>
+    So the plus icon on the left will be available for creating/opening a discussion.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_2.png" />
+    </p>
+- Copilot
+  - After loading the kudos-gpt successfully, the `kudos-gpt: Copilot On/Off` has to be executed yourself for turnning it on.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_04_3.png" />
+    </p>
+    So the inputing the return key on the code will be available for asking some candidate codes to a LLM.
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v3.0.0_1.gif" />
+    </p>
+</details>
+&nbsp;
+<details>
+<summary>03. Have a discussion by asking directly:</summary>
+To ask your question in a discussion, the `Direct asking` button is available.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_1.png" />
+</p>
+Your question will be answered from the assistant.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_05_2.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>04. Have a discussion by asking image: </summary>
+To ask your question about an image in a discussion, the `Asking image` button is available.
+Note that, input a question is required before push it.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.4.0_1.gif"/>
+</p>
+</details>
+&nbsp;
+<details>
+<summary>05. Have a discussion with templates:</summary>
+
+To start a discussion with the template, strings in the clipboard are available with the `Clipboard` button.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_1.png" />
+</p>
+To use the Clipboard button, a message will be added as the system.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_2.png" />
+</p>
+To use the buttons, a message will be added as the user.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_3.png" />
+</p>
+After pushing the “Find bugs” for example, a message from the AIs will be added as the system.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_06_4.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>06. Create a message from a terminal:</summary>
+
+To create a message with the output from a terminal is available with the `Terminal` button. All strings from a terminal will be added to a message with a "kudos-gpt.messages.terminal" prompt in the settings.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_21_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>07. Inject a discussion: </summary>
+
+To Inject a chat from Flowise is available with the injection icon `Chat injection`. And also available to keep continue the conversation after entering a chatId is success.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v4.3.0_1.gif" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>08. Save a discussion: </summary>
+
+To Save a log in a discussion is available with the pencil icon `JSON Export`. It will be created a new JSON file as an `opening file + .{Flowise ChatFlowId}.json`. It will be imported automatically when an original closed file is opened.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_11_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>09. Delete a discussion: </summary></summary>
+
+To delete a discussion, the cross icon `del thread` is available. It will also delete a thread on the Flowise Chat Mdemory.
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_07_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>10. Compare/update an active text editor with a message</summary>
+
+To compare/update an active text editor with a message in a discussion, the `Compare` command from the `More actions…` is available.
+<font color="red">NOTE: A temporary file will be created in a folder `Setting / kudos-gpt / Temp Folder`.</font>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_0.png" />
+</p>
+<p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_40_1.png" />
+</p>
+</details>
+&nbsp;
+<details>
+<summary>11. l10n supporting</summary>
+
+- English
+- Japanese
+
+</details>
+&nbsp;
+
+
+
+<details>
+<summary><font size=5>ver 4.5.0</font></summary>
 <details>
 <summary>01. Configuration: <font color="red">New feature is available.</font></summary>
 
@@ -1669,6 +1907,8 @@ To compare/update an active text editor with a message in a discussion, the `Com
 - Japanese
 
 </details>
+</details>
+
 &nbsp;
 
 
@@ -3208,34 +3448,14 @@ To compare/update an active text editor with a message in a discussion, the `Com
 </details>
 </details>
 
-&nbsp;
-
-# Bonus features(not stable yet) <font color="red">Deprecated, use the web hook on the Flowise instead</font>
-
-<details>
-<summary>0A. Notion export</summary>
-To export a discussion to the Notion, a Notion Integration Token have to be entered beforehand. And then the notion icon `Notion export` will be available and will be able to enter a pageId in the dialog. It will be add as a database in the Notion page.
-<p align="center">
-    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_1.png" />
-</p>
-<p align="center">
-    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_2.png" />
-</p>
-<p align="center">
-    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_3.png" />
-</p>
-<p align="center">
-    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_notion_4.jpg" />
-</p>
-</details>
 
 &nbsp;
 
 # Comming features soon(I hope...)
 
+- Auto development like OpenDevin
 - Publish sample Flowise applications
 - Supporting to trained on permissive data with local models
-- Auto development like OpenDevin
 
 ## **Hand-crafted by [Akira Kudo](https://www.linkedin.com/in/akira-kudo-4b04163/) in Tokyo, Japan**
 
