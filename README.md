@@ -19,7 +19,12 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 - Supported Devin feature
   - Available to import XMLs which are exported by the Bolt.new system promopt.
     - See in detail of the original prompt at the "https://github.com/stackblitz/bolt.new/blob/main/app/lib/.server/llm/prompts.ts".
+      - Recommend to change it for fitting with your environment.
     - boltArtifact and bolt_file_modifications are supported.
+    - Samples
+      - [System Prompt](https://github.com/akudo7/kudos-gpt/raw/HEAD/bolt_new-system-prompt.txt) 
+      - [artifact.xml](https://github.com/akudo7/kudos-gpt/raw/HEAD/artifact.xml) 
+      - [modifications.xml](https://github.com/akudo7/kudos-gpt/raw/HEAD/modifications.xml) 
   <p align="center">
   <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v5.0.0_1.gif"/>
   <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v5.0.0_2.gif"/>
@@ -158,7 +163,7 @@ To enable the kudos-gpt, the token below needs to be set to the Setting / kudos-
 <font color="red">kudo-gpt token for pre-release, it will be working until 2025-03-31.</font>
 
 ```text
-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjQuNi4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6IjliNzQ1ODhkMzU2NWUzMDlhMmUyZjEzZjhiNGI1YzM2MmQ5NjZiMTEwNTVkNGM0MGE4N2I0OTQ4MDI4MjExNTAiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiJhZTQ0NWE5Mi0wYzNkLTQ4NTItYjQ3ZS05Mjc1NzUyN2YwMTciLCJpYXQiOjE3MjcxODc2NDMsImV4cCI6MTc0MzM3OTIwMH0.rqGjZdKIaRmay_TMOCZ24WEaqMJhePDODJEU22fM7pjFofczG8GikQje_y79SkNqKIjO91yBbFqUOORkarRqheZ6uEvcIcWNsO6e-k4KAHXvPIaQ3DkIDRBrxS3Spab1V3qMZaoDGW1ThQWPCmO_rRoh0Wi5L6yvTCmK_w2Dp36LAwJ0hME2hScnmopmW4I_TiymjjonlxsKy1czmO6AYzNAyALHkUT7A82WVst8MOgw9wnMZZUfOQrmkX18awchJh0KA4L15jkZCxA0SBRpmXxMKclP4lbViPT31gjQwxMfY8_NSPbotNPpxQydY-NrrxhHdnjJl8anfLczrEn7tg
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0Ijoia3Vkb3MtZ3B0IiwidmVyc2lvbiI6IjUuMC4wIiwicHVibGlzaCI6InByZS1yZWxlYXNlIiwiaGFzaCI6IjNjOTljZTkyZmU5ZDg2ZTBhZDY3MTZlZjRmOTNkOGY0MTMyM2M1MGE2MGJkNDFhZTY0ZmU1NjlkMjM4M2E4MWUiLCJ1c2VySWQiOm51bGwsInRva2VuSWQiOiI1YjM1MTc2OC05NGY4LTRjMDItODhmYi00YWRkZjY5NWNiZWEiLCJpYXQiOjE3MzU2NDk4NjIsImV4cCI6MTc0MzM3OTIwMH0.ghsg2ytNKle48gNJVAL0UbeJ1gDCjVxeaL7oDz4WpVG7QhgV6gS43segMdJLKJrr75cAT1ZkAGk-K_XOSLBcUp7qaVKwCnkxLs43tX2hRFZkNde3rsUjpmxUtuhCPPHQRF0ABl489woqdFTYfhpjFJajufOiiBfaPaXxVBOFIhvYfvb0TWKu5qSgxxCroYhZhFo1eq_N25I_KaGfPF8QxEaZyV4RvZjF_it8bYfqYqtpsHKRdTT524YwG7du6ZgsEr70aGUe2R2_WmcMql4CLPNhsj3EQ7Lmz1tt7zFzMQGEeTNQc0DI4n8ComohSBE-w6vWbr_UYUi5Xs_QOlhtPg
 ```
 <p align="center">
 <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt_00_1.png" />
