@@ -15,20 +15,35 @@ The kudos-gpt is a ChatGPT-like extension for the VSCode. Now you can have an AI
 
 # New features
 
-<font color="red" size=5>ver 5.0.0</font>
-- Supported Devin feature
-  - Available to import XMLs which are exported by the Bolt.new system promopt.
-    - See in detail of the original prompt at the "https://github.com/stackblitz/bolt.new/blob/main/app/lib/.server/llm/prompts.ts".
-      - Recommend to change it for fitting with your environment.
-    - boltArtifact and bolt_file_modifications are supported.
-    - Samples
-      - [System Prompt](https://github.com/akudo7/kudos-gpt/raw/HEAD/bolt_new-system-prompt.txt) 
-      - [artifact.xml](https://github.com/akudo7/kudos-gpt/raw/HEAD/artifact.xml) 
-      - [modifications.xml](https://github.com/akudo7/kudos-gpt/raw/HEAD/modifications.xml) 
+<font color="red" size=5>ver 5.0.1</font>
+
+- Unlock expire day
+  - No longer need to set the KudosGpt Token
+- Fixed to redraw problem on the Configuration Tab.
+
+The next major version will no longer work with Flowise due to the use of a new DAG engine, which calls LangChain directly. As a result, some features that work with Flowise will be deprecated.
+This is why this version does not require setting the KudosGpt token. I look forward to you upgrading to the next major version "kudosflow".
+
   <p align="center">
-  <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v5.0.0_1.gif"/>
-  <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v5.0.0_2.gif"/>
+  <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudosflow.png"/>
   </p>
+
+- <font size=5>ver 5.0.0</font>
+  <details> 
+  - Supported Devin feature
+    - Available to import XMLs which are exported by the Bolt.new system promopt.
+      - See in detail of the original prompt at the "https://github.com/stackblitz/bolt.new/blob/main/app/lib/.server/llm/prompts.ts".
+        - Recommend to change it for fitting with your environment.
+      - boltArtifact and bolt_file_modifications are supported.
+      - Samples
+        - [System Prompt](https://github.com/akudo7/kudos-gpt/raw/HEAD/bolt_new-system-prompt.txt) 
+        - [artifact.xml](https://github.com/akudo7/kudos-gpt/raw/HEAD/artifact.xml) 
+        - [modifications.xml](https://github.com/akudo7/kudos-gpt/raw/HEAD/modifications.xml) 
+    <p align="center">
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v5.0.0_1.gif"/>
+    <img src="https://github.com/akudo7/kudos-gpt/raw/HEAD/kudos-gpt.v5.0.0_2.gif"/>
+    </p>
+  </details>
 - <font size=5>ver 4.6.0</font>
   <details>
   - Supported the Flowise-SDK
